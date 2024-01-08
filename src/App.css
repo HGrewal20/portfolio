@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/public/test.png");
+  background-size: cover cover;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding: 15px 50px;
+  flex-wrap: wrap;
+}
+
+.categoryTag {
+  background-color: rgba(0, 0, 139, 0.3);
+  color: #fff;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem; /* Add padding inside the card-body */
+  overflow-y: scroll; /* Hide overflowed text */
+  word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+/* Custom scrollbar styles */
+.card-body::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+
+.card-body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background-color: #000; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: none; /* creates padding around scroll thumb */
+}
+
+/* For Firefox */
+.card-body {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: white transparent; /* thumb and track color */
+}
+
+.card-text {
+  margin-top: 1rem;
+}
+
+.navbar {
+  background-color: transparent;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar a {
+  background-color: #FEC92B;
+  border: solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  border-width: 1px 1px 2px;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.navbar a:hover {
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.3); /* Increased area of box-shadow on hover */
+}
